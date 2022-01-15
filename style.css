@@ -11,9 +11,12 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 1440px;
     background-color: #fff;
-    padding: 50px 100px;
+    margin: 0px auto;
 }
-
+.w-1200 {
+    width: 1200px;
+    margin: 0px auto;
+}
 .display-flex {
     display: flex;
 }
@@ -81,7 +84,7 @@ a {
 
 /* ------------------------------- header style -------------------------------------- */
 .main-header {
-    margin: 50px 0px;
+    margin-top: 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -128,14 +131,108 @@ a {
     height: 1px;
     border: none;
 }
-.popular-website > .website-logo {
+
+.popular-website>.website-logo {
     justify-content: center;
     align-items: center;
 }
-.popular-website > .website-logo > li {
+
+.popular-website>.website-logo>li {
     width: 84px;
     height: 26px;
     margin: 36px 55px;
 }
 
 /* ------------------------------- main part style -------------------------------------- */
+main {
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.main-part {
+    width: 1047px;
+}
+
+.main-part>h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.products-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.products-info>.product {
+    width: 329px;
+    height: 485px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.product-img img {
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    padding: 15px;
+}
+
+.product-details {
+    padding: 0px 15px 15px 15px;
+}
+
+.product-details>h4 {
+    font-size: 28px;
+    font-weight: 500px;
+    color: #18191F;
+}
+
+.product-details>h5 {  
+    font-size: 24px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.product-details>.product-rating {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 5px;
+}
+
+.product-rating>li>i {
+    font-size: 12px;
+    color: #FB8200;
+}
+.product-rating>span {
+    color: #5E6366;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+.product-details > p {
+    color: #787885;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.see-more {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 40px;
+    column-gap: 10px;
+    color: rgba(224, 44, 109, 0.87);
+}
+
+/* ------------------------------- footer style -------------------------------------- */
