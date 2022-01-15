@@ -1,5 +1,6 @@
+
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
     /* common style */
     .w-1200 {
@@ -43,7 +44,7 @@
     .header-info>p {
         font-size: 14px;
         text-align: justify;
-        padding: 0px 30px;
+        padding: 0px 50px;
     }
 
     .header-img {
@@ -107,6 +108,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .see-more {
         width: 360px;
     }
@@ -125,18 +127,28 @@
         grid-row-gap: 5px;
     }
 
-    .fill-up-form div {
+    .fill-up-form>div {
         width: 100%;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .fill-up-form label {
+        margin-bottom: -20px;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="password"] {
         width: 70%;
+    }
+
+    input[type="reset"],
+    input[type="submit"] {
+        margin: 5px 0px;
     }
 
     #comment {
