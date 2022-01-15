@@ -2,11 +2,6 @@
 @media (max-width: 576px) {
 
     /* common style */
-    .full-width {
-        width: 100%;
-        margin: 0px auto;
-    }
-
     .w-1200 {
         width: 100%;
         margin: 0px auto;
@@ -112,11 +107,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .products-info>.product {
-        width: 80%;
-        height: 485px;
-    }
     .see-more {
         width: 360px;
     }
@@ -155,10 +145,6 @@
     }
 
     /* ------------------------------- footer style -------------------------------------- */
-    .footer-wrp {
-        width: 100%;
-    }
-
     .footer-wrp h1 {
         font-size: 16px;
         padding-top: 30px;
