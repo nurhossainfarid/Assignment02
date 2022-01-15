@@ -105,6 +105,7 @@ a {
     position: relative;
     -webkit-text-stroke: 0.3vw #f9f5f5;
 }
+
 .header-info>h1::before {
     content: attr(data-text);
     position: absolute;
@@ -118,17 +119,41 @@ a {
     overflow: hidden;
     animation: animation 7s linear infinite;
 }
+
 @keyframes animation {
-    0%,10%,100%{
+
+    0%,
+    10%,
+    100% {
         width: 0%;
     }
-    70%,90% {
+
+    70%,
+    90% {
         width: 100%;
     }
 
 }
-#header-btn:hover {
 
+#header-btn:hover {
+    animation: headerButton 8s ease-in-out infinite;
+}
+
+@keyframes headerButton {
+
+    0%,
+    100% {
+        background-color: #E02C6D;
+        border: none;
+        color: #fff;
+    }
+
+    50% {
+        background-color: #fff;
+        border: 1px solid #E02C6D;
+        color: #E02C6D;
+        transform: scale(1.06);
+    }
 }
 
 .header-info>p {
@@ -174,10 +199,13 @@ a {
     align-items: center;
 }
 
-.popular-website>.website-logo>li {
+.popular-website .website-logo li img {
     width: 84px;
     height: 26px;
-    margin: 36px 55px;
+    margin-left: 60px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
 }
 
 /* ------------------------------- main part style -------------------------------------- */
@@ -280,24 +308,31 @@ main>.main-part {
     margin: 50px 100px;
 
 }
-.comment > h1 {
+
+.comment>h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
 }
-.comment > h1 > i {
+
+.comment>h1>i {
     color: #E02C6D;
 }
+
 .fill-up-form {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 25px;
 }
+
 .fill-up-form label {
     font-size: 20px;
     color: #18191F;
 }
-input[type="text"],input[type="email"],input[type="password"] {
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     border: 1px solid gray;
     width: 85%;
     height: 40px;
@@ -307,6 +342,7 @@ input[type="text"],input[type="email"],input[type="password"] {
     color: #787885;
     outline: none;
 }
+
 #comment {
     border: 1px solid gray;
     width: 85%;
@@ -317,18 +353,22 @@ input[type="text"],input[type="email"],input[type="password"] {
     color: #787885;
     outline: none;
 }
+
 input[type="password"] {
     font-size: 20px;
 }
+
 .btn-form {
     border-radius: 5px;
 }
+
 .jobs h5 {
     font-size: 20px;
     color: #18191F;
     font-weight: normal;
     margin-bottom: 5px;
 }
+
 .jobs .job label {
     font-size: 16px;
     color: #787885;
