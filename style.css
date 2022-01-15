@@ -305,8 +305,8 @@ main>.main-part {
 
 /* ------------------------------- comment style -------------------------------------- */
 .comment {
-    margin: 50px 100px;
-
+    width: 1047px;
+    margin: 50px 0px;
 }
 
 .comment>h1 {
@@ -323,6 +323,7 @@ main>.main-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 25px;
+    grid-column-gap: 10%;
 }
 
 .fill-up-form label {
@@ -379,12 +380,12 @@ input[type="password"] {
     width: 1440px;
     background: #0A0826;
     text-align: center;
+    padding: 50px 0px;
 }
 
 .footer-wrp h1 {
     color: #fff;
     font-size: 24px;
-    padding-top: 50px;
 }
 
 .footer-wrp p {
