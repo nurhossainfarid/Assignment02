@@ -177,7 +177,179 @@
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+        /* ------------------------------- common style -------------------------------------- */
+        .w-1200 {
+            width: 100%;
+            margin: 0px auto;
+        }
+    
+        /* logo menu design */
+        .logo-menu-design {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .logo {
+            text-align: center;
+            font-size: 20px;
+        }
+    
+        .main-menu>ul {
+            display: none;
+        }
+    
+        /* ------------------------------- header style -------------------------------------- */
+        .main-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+    
+        .header-info {
+            text-align: center;
+        }
+    
+        .header-info>h1 {
+            width: 243px;
+            font-size: 40px;
+            margin: 0px auto;
+        }
+    
+        .header-info>p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 0px 50px;
+        }
+    
+        .header-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .header-img>div {
+            width: 330px;
+            height: 100%;
+            background: none;
+        }
+    
+        .header-img>div>img {
+            width: 310px;
+            height: 270px;
+            margin-top: 25px;
+        }
+    
+        /* ------------------------------- popular marketing website style -------------------------------------- */
+        .popular-website {
+            width: 90px;
+            margin: 0px auto;
+            padding: 40px 0px;
+        }
+    
+        .popular-website hr {
+            display: none;
+        }
+    
+        .popular-website>.website-logo {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+    
+        .popular-website .website-logo li img {
+            width: 50px;
+            height: 15px;
+            margin-left: 30px;
+        }
+    
+        /* ------------------------------- main area style -------------------------------------- */
+        main {
+            margin: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        main>.main-part {
+            width: 100%;
+        }
+    
+        .products-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .see-more {
+            width: 360px;
+        }
+    
+        /* ------------------------------- leave comment -------------------------------------- */
+        .comment-out {
+            width: 100%;
+            margin: 50px 0px;
+        }
+    
+        .fill-up-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-row-gap: 5px;
+        }
+    
+        .fill-up-form>div {
+            width: 100%;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    
+        .fill-up-form label {
+            margin-bottom: -20px;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 70%;
+        }
+    
+        input[type="reset"],
+        input[type="submit"] {
+            margin: 5px 0px;
+        }
+    
+        #comment {
+            width: 80%;
+            height: 100px;
+        }
+    
+        /* ------------------------------- footer style -------------------------------------- */
+        .footer-wrp h1 {
+            font-size: 16px;
+            padding-top: 30px;
+        }
+    
+        .footer-wrp p {
+            font-size: 12px;
+        }
+    
+        .footer-wrp .social-icon>li {
+            width: 24px;
+            height: 24px;
+        }
+    
+        .footer-wrp .social-icon>li>a>i {
+            font-size: 14px;
+        }
+}
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {}
