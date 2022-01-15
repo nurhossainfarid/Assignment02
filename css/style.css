@@ -202,7 +202,7 @@ a {
     align-items: center;
 }
 
-/* ------------------------------- main part style -------------------------------------- */
+/* ------------------------------- main area style -------------------------------------- */
 main {
     margin: 60px 0px;
     display: flex;
@@ -297,19 +297,19 @@ main>.main-part {
     color: rgba(224, 44, 109, 0.87);
 }
 
-/* ------------------------------- comment style -------------------------------------- */
-.comment {
+/* ------------------------------- leave comment style -------------------------------------- */
+.comment-out {
     width: 1047px;
     margin: 50px 0px;
 }
 
-.comment>h1 {
+.comment-out>h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
 }
 
-.comment>h1>i {
+.comment-out>h1>i {
     color: #E02C6D;
 }
 

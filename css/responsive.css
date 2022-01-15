@@ -1,8 +1,7 @@
-
 /* X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 576px) {
 
-    /* common style */
+    /* ------------------------------- common style -------------------------------------- */
     .w-1200 {
         width: 100%;
         margin: 0px auto;
@@ -23,7 +22,7 @@
         display: none;
     }
 
-    /* header */
+    /* ------------------------------- header style -------------------------------------- */
     .main-header {
         display: flex;
         flex-direction: column;
@@ -66,8 +65,7 @@
         margin-top: 25px;
     }
 
-
-    /* popular marketing website style */
+    /* ------------------------------- popular marketing website style -------------------------------------- */
     .popular-website {
         width: 90px;
         margin: 0px auto;
@@ -90,7 +88,7 @@
         margin-left: 30px;
     }
 
-    /* main part style  */
+    /* ------------------------------- main area style -------------------------------------- */
     main {
         margin: 60px 0px;
         display: flex;
@@ -113,8 +111,8 @@
         width: 360px;
     }
 
-    /* comment */
-    .comment {
+    /* ------------------------------- leave comment -------------------------------------- */
+    .comment-out {
         width: 100%;
         margin: 50px 0px;
     }
